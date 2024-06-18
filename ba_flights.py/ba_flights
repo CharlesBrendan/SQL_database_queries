@@ -1,0 +1,12 @@
+
+--flight without manufacturer and ac subtype assigned
+SELECT	flights.flight_id,
+        aircraft.manufacturer,
+        aircraft.ac_subtype
+
+FROM ba_flights flights
+LEFT JOIN ba_aircraft aircraft
+ON flights.flight_id = aircraft.flight_id
+
+WHERE aircraft.flight_id IS NULL
+;
