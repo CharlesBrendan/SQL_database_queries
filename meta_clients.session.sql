@@ -53,3 +53,11 @@ SELECT client_id, geo_user, parent_company
 FROM meta_revenue
 WHERE parent_company = 'Instagram';
 
+
+--What is the average annual revenue per sector of clients that work in the sectors Insurance and
+---Banking? 
+SELECT UPPER(sector) AS clean_sector,
+		AVG(annual_revenue) AS avg_annual_revenue
+FROM meta_clients
+WHERE UPPER(sector)  IN ('BANKING','INSURANCE')
+GROUP BY UPPER(sector);
