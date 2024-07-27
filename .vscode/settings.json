@@ -59,6 +59,36 @@
             "name": "unicorn",
             "database": "SQL",
             "username": "Test"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "ep-noisy-flower-846766-pooler.us-east-2.aws.neon.tech",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "Unicorn",
+            "database": "Unicorn",
+            "username": "Test"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "ep-noisy-flower-846766-pooler.us-east-2.aws.neon.tech",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "metrocar",
+            "database": "Metrocar",
+            "username": "Test"
         }
     ]
 }
